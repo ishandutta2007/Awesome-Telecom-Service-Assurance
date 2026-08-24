@@ -28,7 +28,7 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
-- [SaaS/Hosted Platforms](#saas-products)
+- [SaaS/Hosted Platforms](#saashosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
 
@@ -40,63 +40,18 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-- **[Accedian](https://www.accedian.com/)**  
-
-  Service assurance and performance monitoring solutions focused on precise metrics, active testing, and experience assurance for telecom and enterprise networks.
-
-
-
-- **[Viavi Solutions](https://www.viavisolutions.com/)**  
-
-  Broad portfolio of network test, monitoring, and service assurance tools spanning fiber, 5G, and end-to-end visibility for operators.
-
-
-
-- **[Nokia Deepfield](https://www.nokia.com/)**  
-
-  Network intelligence and security analytics platform used for traffic analysis, DDoS detection, and service assurance insights at scale.
-
-
-
-- **[EXFO](https://www.exfo.com/)**  
-
-  Test, monitoring, and analytics solutions strong in fiber, 5G, and real-time service assurance for communications service providers.
-
-
-
-- **[Infovista](https://www.infovista.com/)**  
-
-  Network and service assurance portfolio covering radio, core, and customer experience analytics for mobile and fixed operators.
-
-
-
-- **[NETSCOUT](https://www.netscout.com/)**  
-
-  Service assurance and cybersecurity visibility platforms (including nGenius) providing deep packet and session-level insight for carriers and large enterprises.
-
-
-
-- **[RADCOM](https://radcom.com/)**  
-
-  Cloud-native service assurance and network intelligence solutions focused on 5G and virtualized environments.
-
-
-
-- **[Roamware](https://www.roamware.com/)**  
-
-  Solutions historically associated with roaming and related service management (context-dependent in modern assurance stacks).
-
-
-
-- **[Amdocs Service Assurance](https://www.amdocs.com/)**  
-
-  Service assurance capabilities within the broader Amdocs portfolio, supporting operator operational and customer experience processes.
-
-
-
-- **[MYCOM OSI](https://www.mycom-osi.com/)**  
-
-  Service assurance and performance management platform used by operators for multi-vendor, multi-technology network monitoring and analytics.
+| Platform / Product | Focus & Capabilities | Starting Pricing Tier | Free Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[Accedian (Cisco PCA)](https://www.accedian.com/)** | Active network & service performance monitoring, microsecond-level latency analytics, and synthetic experience testing across telco and cloud domains. | Starting at **~$1,500/month** (~$18,000/year) for Cisco Crosswork Assurance Essentials / Skylight base sensor pack. | **30-day free trial / PoC** with up to 25 virtual test sensor endpoints and synthetic traffic generation. |
+| **[Viavi Solutions](https://www.viavisolutions.com/)** | End-to-end test, packet analysis, and automated assurance (Observer, TeraVM, NITRO) across fiber, 5G RAN, and transport networks. | Starting at **~$450/month per probe** (~$3,500 perpetual/instance entry license for Observer Apex). | **14 to 30-day evaluation trial** on request, providing full lab access to Observer Suite and TeraVM virtual test agents. |
+| **[Nokia Deepfield](https://www.nokia.com/)** | Real-time big data network analytics, IP network intelligence, DDoS mitigation (Defender), and carrier-scale traffic assurance (Genome). | Starting at **~$2,000/month** (~$24,000/year) base subscription scaling by monitored flow throughput (Gbps/Mpps). | **30-day guided Proof of Concept (PoC)** sandbox trial with live flow analysis and threat telemetry. |
+| **[EXFO](https://www.exfo.com/)** | Automated service assurance (Nova SensAI, Adaptive Service Assurance) and fiber/5G active test orchestration (EXFO Exchange). | Starting at **~$1,200/month** (~$14,400/year) for EXFO Exchange and Nova Context starter licenses. | **30-day free trial / sandbox** for EXFO Exchange and Nova Active virtual agents with sample telemetry datasets. |
+| **[Infovista](https://www.infovista.com/)** | Multi-domain 5G/RAN and core assurance (Ativa suite), RF network planning (Planet SaaS), and automated drive/bench testing (TEMS / VistaTest). | Starting at **~$2,000/month** (~$24,000/year) for entry Ativa / Planet SaaS starter module. | **14-day guided cloud demo / sandbox** with pre-configured telco network slices and KPI analytics templates. |
+| **[NETSCOUT](https://www.netscout.com/)** | Deep packet inspection (Smart Data), carrier-scale service visibility, and cyber/assurance telemetry (nGeniusONE, Omnis, vSTREAM). | Starting at **~$0.95/hour** (~$690/month PAYG on AWS) or **~$15,000/year** for base vSTREAM virtual appliance subscription. | **14-day free trial** for vSTREAM virtual probes on AWS Marketplace; **30-day guided PoC** for nGeniusONE virtual appliances. |
+| **[RADCOM](https://radcom.com/)** | Cloud-native automated assurance, 5G network intelligence, and containerized probe telemetry (RADCOM ACE) for virtualized carrier networks. | Starting at **~$3,000/month** (~$36,000/year) for entry cloud-native probe and network telemetry tier. | **30-day lab PoC / trial** deployment on AWS/Azure supporting up to 10 Gbps monitored interface capacity. |
+| **[Roamware (Mobileum)](https://www.roamware.com/)** | Roaming service assurance, interconnect steering, fraud protection, and subscriber experience analytics (Active Intelligence platform). | Starting at **~$2,500/month** (~$30,000/year) for core roaming quality assurance & test monitoring module. | **30-day guided evaluation pilot** for roaming QoS verification and automated synthetic test call generation. |
+| **[Amdocs Service Assurance](https://www.amdocs.com/)** | End-to-end service assurance, fault & performance correlation (Smart End-to-End Assurance), and automated root-cause orchestration. | Starting at **~$4,000/month** (~$48,000/year) base subscription for digital assurance & fault management modules. | **30-day PoC / sandbox environment** with pre-populated multi-layer topology and network fault data. |
+| **[MYCOM OSI](https://www.mycom-osi.com/)** | Cloud-native Experience Assurance & Analytics (EAA) SaaS, multi-vendor performance and fault management for Tier-1 CSPs. | Starting at **~$3,500/month** (~$42,000/year) for entry EAA SaaS cloud deployment package. | **30-day enterprise trial / PoC** via AWS Marketplace for CSPs (monitoring up to 5,000 network entities). |
 
 
 
