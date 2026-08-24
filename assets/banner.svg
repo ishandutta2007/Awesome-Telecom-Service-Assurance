@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b19" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050814" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="telecomCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(56, 189, 248, 0.07)" stroke-width="1" />
+    </pattern>
+
+    <!-- CSS Animations -->
+    <style>
+      @keyframes pulseRing {
+        0% { r: 12px; opacity: 0.8; }
+        50% { r: 28px; opacity: 0.2; }
+        100% { r: 12px; opacity: 0.8; }
+      }
+      @keyframes pulseRingLarge {
+        0% { r: 35px; opacity: 0.6; }
+        50% { r: 60px; opacity: 0.1; }
+        100% { r: 35px; opacity: 0.6; }
+      }
+      @keyframes signalWave {
+        0% { stroke-dashoffset: 600; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes beaconBlink {
+        0%, 100% { opacity: 0.3; transform: scale(0.95); }
+        50% { opacity: 1; transform: scale(1.05); }
+      }
+      @keyframes badgeFloat {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+      }
+      .ring-anim-1 { animation: pulseRing 3s ease-in-out infinite; transform-origin: center; }
+      .ring-anim-2 { animation: pulseRingLarge 4s ease-in-out infinite; transform-origin: center; }
+      .wave-line-1 { stroke-dasharray: 20 10; animation: signalWave 15s linear infinite; }
+      .wave-line-2 { stroke-dasharray: 12 8; animation: signalWave 10s linear reverse infinite; }
+      .beacon { animation: beaconBlink 2.5s ease-in-out infinite; }
+      .floating-tag { animation: badgeFloat 4s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="360" rx="16" fill="url(#grid)" />
+
+  <!-- Abstract Network Topology Overlay -->
+  <g opacity="0.6">
+    <path d="M 50 180 Q 250 80, 450 180 T 850 180 T 1150 180" fill="none" stroke="url(#telecomCyan)" stroke-width="2" opacity="0.3" />
+    <path d="M 100 280 C 300 220, 400 320, 600 240 C 800 160, 950 300, 1100 200" fill="none" stroke="url(#primaryGlow)" stroke-width="2" class="wave-line-1" opacity="0.5" />
+    <path d="M 150 90 C 350 170, 500 60, 750 130 C 950 190, 1020 90, 1120 120" fill="none" stroke="#38bdf8" stroke-width="1.5" class="wave-line-2" opacity="0.4" />
+  </g>
+
+  <!-- Network Tower & Nodes Graphic (Left Accent) -->
+  <g transform="translate(80, 80)">
+    <circle cx="60" cy="90" r="45" fill="none" stroke="#38bdf8" stroke-width="1.5" class="ring-anim-2" />
+    <circle cx="60" cy="90" r="22" fill="none" stroke="#818cf8" stroke-width="2" class="ring-anim-1" />
+    <circle cx="60" cy="90" r="8" fill="#38bdf8" filter="url(#glow)" />
+
+    <path d="M 60 50 A 40 40 0 0 1 100 90" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" class="beacon" />
+    <path d="M 60 35 A 55 55 0 0 1 115 90" fill="none" stroke="#818cf8" stroke-width="2.5" stroke-linecap="round" opacity="0.7" class="beacon" style="animation-delay: 0.4s;" />
+    <path d="M 60 20 A 70 70 0 0 1 130 90" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" opacity="0.4" class="beacon" style="animation-delay: 0.8s;" />
+
+    <line x1="60" y1="90" x2="-20" y2="40" stroke="#0ea5e9" stroke-width="1.5" stroke-dasharray="4 3" />
+    <circle cx="-20" cy="40" r="5" fill="#0ea5e9" filter="url(#subtleGlow)" />
+
+    <line x1="60" y1="90" x2="-10" y2="150" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4 3" />
+    <circle cx="-10" cy="150" r="5" fill="#a855f7" filter="url(#subtleGlow)" />
+  </g>
+
+  <!-- Core Content & Typography -->
+  <g transform="translate(260, 0)">
+    <!-- Category Badge -->
+    <g transform="translate(0, 58)" class="floating-tag">
+      <rect width="320" height="32" rx="16" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1" />
+      <circle cx="18" cy="16" r="5" fill="#10b981" filter="url(#subtleGlow)" />
+      <text x="32" y="21" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">5G • RAN • CORE • CLOUD ASSURANCE</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="145" fill="url(#primaryGlow)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5" filter="url(#subtleGlow)">Awesome Telecom Service Assurance</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="190" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="500">
+      Curated Ecosystem of SaaS Platforms, Probes, QoS/QoE &amp; Open-Source Tools
+    </text>
+
+    <!-- Feature Highlights / Capability Badges -->
+    <g transform="translate(0, 230)">
+      <g transform="translate(0, 0)">
+        <rect width="185" height="36" rx="8" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1" />
+        <text x="14" y="23" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">📡 Network Monitoring</text>
+      </g>
+
+      <g transform="translate(197, 0)">
+        <rect width="165" height="36" rx="8" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(129, 140, 248, 0.25)" stroke-width="1" />
+        <text x="14" y="23" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">📊 5G QoS / QoE SLA</text>
+      </g>
+
+      <g transform="translate(374, 0)">
+        <rect width="185" height="36" rx="8" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(192, 132, 252, 0.25)" stroke-width="1" />
+        <text x="14" y="23" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">⚡ Closed-Loop AIOps</text>
+      </g>
+
+      <g transform="translate(571, 0)">
+        <rect width="175" height="36" rx="8" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(16, 185, 129, 0.25)" stroke-width="1" />
+        <text x="14" y="23" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">🔍 Deep Packet Probes</text>
+      </g>
+    </g>
+
+    <!-- Bottom Status Line -->
+    <g transform="translate(0, 298)">
+      <circle cx="6" cy="6" r="4" fill="#38bdf8" />
+      <text x="18" y="10" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">Continuous Updates • Multi-Vendor Telemetry • Carrier-Grade Scalability</text>
+    </g>
+  </g>
+
+  <!-- Right Decorative Telemetry Node Graphic -->
+  <g transform="translate(1080, 180)">
+    <circle cx="0" cy="0" r="50" fill="none" stroke="rgba(192, 132, 252, 0.2)" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="30" fill="none" stroke="rgba(56, 189, 248, 0.3)" stroke-width="2" class="ring-anim-1" />
+    <circle cx="0" cy="0" r="10" fill="#818cf8" filter="url(#glow)" />
+    <line x1="0" y1="0" x2="-40" y2="-60" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 3" />
+    <circle cx="-40" cy="-60" r="4" fill="#38bdf8" />
+    <line x1="0" y1="0" x2="-50" y2="50" stroke="#c084fc" stroke-width="1.5" stroke-dasharray="3 3" />
+    <circle cx="-50" cy="50" r="4" fill="#c084fc" />
+  </g>
+</svg>
